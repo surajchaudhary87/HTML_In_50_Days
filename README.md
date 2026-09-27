@@ -18,8 +18,8 @@ This repository contains my 50-day HTML learning journey.
 ## Progress
 
 - [x] Day 01 - HTML Introduction and Basic Structure
-- [ ] Day 02 - Headings and Paragraphs
-- [ ] Day 03 - Text Formatting
+- [x] Day 02 - Headings and Paragraphs
+- [x] Day 03 - Text Formatting
 - [ ] Day 04 - Links
 - [ ] Day 05 - Images
 
