@@ -22,6 +22,9 @@ This repository contains my 50-day HTML learning journey.
 - [x] Day 03 - Text Formatting
 - [x] Day 04 - Links
 - [x] Day 05 - Images
+- [x] Day 06 - HTML Lists
+- [x] Day 07 - HTML Tables
+
 
 More days will be added as I continue my learning journey.
 
