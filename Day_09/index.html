@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <hr>
+    <form>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" id="male" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female" required>
+        <label for="female">Female</label><br><br>
+
+        <label>Skills:</label>
+        <input type="checkbox" name="skills" id="java" value="java">
+        <label for="java">Java</label>
+        <input type="checkbox" name="skills" id="python" value="python">
+        <label for="python">Python</label>
+        <input type="checkbox" name="skills" id="javascript" value="javascript">
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" name="skills" id="html" value="html">
+        <label for="html">HTML</label><br><br>
+
+        <label for="city">City:</label>
+
+        <select id="city" required>
+            <option value="">Select your city</option>
+            <option value="lucknow">Lucknow</option>
+            <option value="delhi">Delhi</option>
+            <option value="basti">Basti</option>
+            <option value="agra">Agra</option>
+        </select>
+
+        <br><br>
+
+        <label for="message">Message:</label>
+
+        <textarea 
+            name="message" id="message" 
+            cols="20" rows="3" 
+            placeholder="Enter your message">
+        </textarea><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
