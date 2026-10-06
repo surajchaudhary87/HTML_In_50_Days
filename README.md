@@ -25,6 +25,10 @@ This repository contains my 50-day HTML learning journey.
 - [x] Day 06 - HTML Lists
 - [x] Day 07 - HTML Tables
 - [x] Day 08 - HTML Forms
+- [x] Day 09 - HTML Forms Controls
+- [x] Day 10 - HTML Semantic Tags
+- [x] Day 11 - HTML Multimeia
+- [x] Day 12 - HTML Basic Page Layout
 
 
 More days will be added as I continue my learning journey.
