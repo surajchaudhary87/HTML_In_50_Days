@@ -29,6 +29,7 @@ This repository contains my 50-day HTML learning journey.
 - [x] Day 10 - HTML Semantic Tags
 - [x] Day 11 - HTML Multimeia
 - [x] Day 12 - HTML Basic Page Layout
+- [x] Day 12 - HTML Entities & Special Symbols , Characters
 
 
 More days will be added as I continue my learning journey.
