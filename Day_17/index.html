@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Multimedia</title>
+</head>
+<body>
+    
+    <header>
+        <h1>My Multimedia Website</h1>
+    </header>
+    
+    <nav>
+        <a href="#">Audio</a>
+        <a href="#">Video</a>
+        <a href="#">YouTube</a>
+
+    </nav>
+
+    <hr>
+
+    <main>
+
+        <!-- Audio Section -->
+        <section id="audio">
+            <h2>HTML Audio</h2>
+
+            <p>Listen to the audio below</p>
+
+            <audio controls loop>
+                <source src="Audio/music.mp3" type="audio/mpeg">
+                Your browser does not support audio
+            </audio>
+        </section>
+
+
+        <!-- Video Section -->
+        <section id="video">
+            <h2>HTML Video</h2>
+
+            <p>Watch the video below</p>
+
+            <video controls width="400" poster="Images/thumnail.jpg">
+                <source src="Video/travel.mp4" type="video/mp4">
+                Your browser does not support video
+            </video>
+        </section>
+
+        <!-- YouTube Section -->
+        <section id="youtube">
+            <h2>YouYube Video</h2>
+
+            <p>Watch an embedded YouTube video</p>
+
+            <iframe
+                width="400"
+                height="225"
+                src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <!-- Learning Summary-->
+        <section>
+            <h2>What I Learned</h2>
+
+            <ul>
+                <li>HTML audio elements</li>
+                <li>HTML video elements</li>
+                <li>Audio and video attributes</li>
+                <li>Embedding YouTube video using iframe</li>
+            </ul>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 HTML Learning Journey</p>
+        <p>Created by Suraj</p>
+    </footer>
+    
+
+</body>
+</html>

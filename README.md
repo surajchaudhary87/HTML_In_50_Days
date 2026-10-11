@@ -31,7 +31,9 @@ This repository contains my 50-day HTML learning journey.
 - [x] Day 12 - HTML Basic Page Layout
 - [x] Day 13 - HTML Entities & Special Symbols , Characters
 - [x] Day 14 - SEO Basics & Meta Tags
-- [x] Day 15 - Addvanced HTML Forms & Form Validation
+- [x] Day 15 - Advanced HTML Forms & Form Validation
+- [x] Day 16 - Advanced HTML Tables
+- [x] Day 17 - Advanced HTML Audio, Video, Tags
 
 
 More days will be added as I continue my learning journey.
