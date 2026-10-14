@@ -35,6 +35,7 @@ This repository contains my 50-day HTML learning journey.
 - [x] Day 16 - Advanced HTML Tables
 - [x] Day 17 - Advanced HTML Audio, Video Tags
 - [x] Day 18 - HTML Details and Summary Tags
+- [x] Day 19 - HTML Progress and Meter
 
 
 More days will be added as I continue my learning journey.
