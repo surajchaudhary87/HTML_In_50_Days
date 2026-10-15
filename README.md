@@ -36,6 +36,7 @@ This repository contains my 50-day HTML learning journey.
 - [x] Day 17 - Advanced HTML Audio, Video Tags
 - [x] Day 18 - HTML Details and Summary Tags
 - [x] Day 19 - HTML Progress and Meter
+- [x] Day 19 - HTML Figure and Figcaption 
 
 
 More days will be added as I continue my learning journey.
