@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML picture, source, srcset and responsive images with examples.">
+    <title>Day 21 - HTML Responsive Images</title>
+</head>
+<body>
+
+    <header>
+        <h1>HTML Responsive Images</h1>
+        <p>HTML in 50 Days - Day 21 Project</p>
+    </header>
+
+    <hr>
+
+    <nav>
+        <a href="#picture-example">Picture Example</a> |
+        <a href="#srcset-example">Srcset Example</a> |
+        <a href="#learning">What I Learned</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section id="picture-example">
+            <h2>1. Using the Picture Element</h2>
+            <p>
+                The picture element allows the browser to choose
+                an appropriate image source based on conditions.
+            </p>
+
+            <picture>
+                <source
+                    media="(max-width: 600px)"
+                    srcset="Images/mobile.png">
+
+                <source
+                    media="(min-width: 601px)"
+                    srcset="Images/desktop.png">
+
+                <img
+                    src="Images/default.png"
+                    alt="Beautiful mountain landscape"
+                    width="600">
+            </picture>
+        </section>
+
+        <hr>
+
+        <section id="srcset-example">
+            <h2>2. Using Srcset and Sizes</h2>
+            <p>
+                Srcset provides different image versions,
+                while sizes describes the expected display width.
+            </p>
+
+            <img
+                src="Images/landscape-600.png"
+                srcset="
+                    Images/landscape-600.png 600w,
+                    Images/landscape-1200.png 1200w
+                "
+                sizes="(max-width: 600px) 100vw, 600px"
+                alt="A beautiful natural landscape"
+                width="600">
+        </section>
+
+        <hr>
+
+        <section id="learning">
+            <h2>What I Learned</h2>
+            <ul>
+                <li>Using the picture element.</li>
+                <li>Using the source element.</li>
+                <li>Understanding media conditions.</li>
+                <li>Using srcset for image alternatives.</li>
+                <li>Understanding the sizes attribute.</li>
+                <li>Providing alt text for accessibility.</li>
+            </ul>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 HTML Learning Journey</p>
+        <p>Day 21 - Responsive Images</p>
+        <p>Created by Suraj Chaudhary</p>
+    </footer>
+
+</body>
+</html>
