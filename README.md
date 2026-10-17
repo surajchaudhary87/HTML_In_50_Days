@@ -38,6 +38,7 @@ This repository contains my 50-day HTML learning journey.
 - [x] Day 19 - HTML Progress and Meter
 - [x] Day 20 - HTML Figure and Figcaption
 - [x] Day 21 - HTML Picture and Source
+- [x] Day 21 - HTML Map and Area Tags
 
 More days will be added as I continue my learning journey.
 

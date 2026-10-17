@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML image maps using map, area, shape and coords.">
+    <title>HTML Image Maps</title>
+</head>
+<body>
+
+    <header>
+        <h1>HTML Image Maps</h1>
+    </header>
+
+    <hr>
+
+    <nav>
+        <a href="#demo">Image Map Demo</a> |
+        <a href="#concepts">HTML Concepts</a> |
+        <a href="#learning">What I Learned</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section id="demo">
+            <h2>Clickable Computer Image</h2>
+            <p>
+                Click the monitor, keyboard or mouse area
+                in the image to open its information page.
+            </p>
+
+            <img
+                src="Images/computer.png"
+                alt="Computer setup with monitor, keyboard and mouse"
+                usemap="#computer-map"
+                width="500">
+
+            <map name="computer-map">
+                <area
+                    shape="rect"
+                    coords="100,20,400,250"
+                    href="#monitor"
+                    alt="Monitor">
+
+                <area
+                    shape="rect"
+                    coords="80,280,400,360"
+                    href="#keyboard"
+                    alt="Keyboard">
+
+                <area
+                    shape="circle"
+                    coords="440,320,35"
+                    href="#mouse"
+                    alt="Mouse">
+            </map>
+        </section>
+
+        <hr>
+
+        <section id="monitor">
+            <h2>Monitor</h2>
+            <p>A monitor displays text, images and other computer output.</p>
+        </section>
+
+        <hr>
+
+        <section id="keyboard">
+            <h2>Keyboard</h2>
+            <p>A keyboard is used to enter text, numbers and commands.</p>
+        </section>
+
+        <hr>
+
+        <section id="mouse">
+            <h2>Mouse</h2>
+            <p>A mouse helps you point, click and select items on a screen.</p>
+        </section>
+
+        <hr>
+
+        <section id="concepts">
+            <h2>Important HTML Elements</h2>
+            <ul>
+                <li><code>&lt;map&gt;</code> defines an image map.</li>
+                <li><code>&lt;area&gt;</code> defines a clickable region.</li>
+                <li><code>usemap</code> connects an image to a map.</li>
+                <li><code>shape</code> defines the region's shape.</li>
+                <li><code>coords</code> defines the region's coordinates.</li>
+                <li><code>href</code> defines the destination.</li>
+                <li><code>alt</code> describes the clickable area.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="learning">
+            <h2>What I Learned</h2>
+            <ol>
+                <li>Creating an HTML image map.</li>
+                <li>Making image regions clickable.</li>
+                <li>Using rectangle and circle coordinates.</li>
+                <li>Connecting clickable areas to page sections.</li>
+            </ol>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 HTML Learning Journey</p>
+        <p>Day 22 - HTML Image Maps</p>
+        <p>Created by Suraj Chaudhary</p>
+    </footer>
+
+</body>
+</html>
