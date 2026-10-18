@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn the HTML template element with a reusable student card project.">
+    <title>HTML Template</title>
+</head>
+<body>
+
+    <header>
+        <h1>Student Information System</h1>
+        <p>HTML in 50 Days - Day 23 Project</p>
+    </header>
+
+    <hr>
+
+    <nav>
+        <a href="#students">Students</a> |
+        <a href="#concepts">HTML Concepts</a> |
+        <a href="#learning">What I Learned</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section id="students">
+            <h2>Student Details</h2>
+            <p>
+                The student cards below are created using
+                one reusable HTML template.
+            </p>
+
+            <div id="student-list">
+                <p id="loading-message">Loading student details...</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="concepts">
+            <h2>Important Concepts</h2>
+            <ul>
+                <li>
+                    <code>&lt;template&gt;</code> stores reusable
+                    HTML content that is not rendered normally.
+                </li>
+                <li>
+                    <code>template.content</code> accesses
+                    the template's content.
+                </li>
+                <li>
+                    <code>cloneNode(true)</code> copies the
+                    template and its descendants.
+                </li>
+                <li>
+                    <code>appendChild()</code> adds the copied
+                    content to the page.
+                </li>
+                <li>
+                    <code>textContent</code> sets the text
+                    inside an element.
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="learning">
+            <h2>What I Learned</h2>
+            <ol>
+                <li>Understanding the template element.</li>
+                <li>Creating reusable HTML structures.</li>
+                <li>Cloning template content with JavaScript.</li>
+                <li>Displaying multiple student cards.</li>
+                <li>Understanding the basic purpose of slot.</li>
+            </ol>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 HTML Learning Journey</p>
+        <p>HTML Template</p>
+        <p>Created by Suraj Chaudhary</p>
+    </footer>
+
+    <!-- Reusable student card template -->
+    <template id="student-template">
+        <article>
+            <h3 class="student-name"></h3>
+            <p class="student-course"></p>
+            <p class="student-year"></p>
+        </article>
+        <hr>
+    </template>
+
+    <!-- JavaScript uses the template to create student cards -->
+    <script>
+        const students = [
+            {
+                name: "Aman Sharma",
+                course: "BCA",
+                year: "First Year"
+            },
+            {
+                name: "Priya Verma",
+                course: "BCA",
+                year: "Second Year"
+            },
+            {
+                name: "Rahul Singh",
+                course: "BCA",
+                year: "Third Year"
+            }
+        ];
+
+        const template = document.getElementById("student-template");
+        const studentList = document.getElementById("student-list");
+        const loadingMessage = document.getElementById("loading-message");
+
+        loadingMessage.remove();
+
+        students.forEach(function(student) {
+            const card = template.content.cloneNode(true);
+
+            card.querySelector(".student-name").textContent = student.name;
+            card.querySelector(".student-course").textContent =
+                "Course: " + student.course;
+            card.querySelector(".student-year").textContent =
+                "Year: " + student.year;
+
+            studentList.appendChild(card);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+</head>
+<body>
+    <div id="student-list"></div>
+
+    <template id="student-template">
+        <article>
+            <h2 class="student-name"></h2>
+            <p class="student-course"></p>
+        </article>
+    </template>
+
+    <script>
+        const students = [
+            { name: "Aman", course: "BCA" },
+            { name: "Priya", course: "BCA" },
+            { name: "Rahul", course: "BCA" }
+        ];
+
+        const template = document.getElementById("student-template");
+        const list = document.getElementById("student-list");
+
+        students.forEach(function(student) {
+            const card = template.content.cloneNode(true);
+
+            card.querySelector(".student-name").textContent = student.name;
+            card.querySelector(".student-course").textContent =
+                "Course: " + student.course;
+
+            list.appendChild(card);
+        });
+    </script>
+</body>
+</html>

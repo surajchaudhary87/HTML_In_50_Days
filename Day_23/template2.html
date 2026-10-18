@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+
+</head>
+<body>
+    
+    <h1>Student Details</h1>
+    <div id="student-list"></div>
+
+    <template id="student-template">
+        <article>
+            <h2>Suraj Chaudhary</h2>
+            <p>Course: BCA</p>
+        </article>
+    </template>
+
+    <script>
+        const template = document.getElementById("student-template");
+        const list = document.getElementById("student-list");
+
+        const studentCard = template.content.cloneNode(true);
+
+        list.appendChild(studentCard);
+    </script>
+
+</body>
+</html>
