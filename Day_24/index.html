@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML dialog, showModal, show and close methods.">
+    <title>HTML Dialog</title>
+</head>
+<body>
+
+    <header>
+        <h1>HTML Dialog Box Demo</h1>
+    </header>
+
+    <hr>
+
+    <nav>
+        <a href="#demo">Dialog Demo</a> |
+        <a href="#concepts">Concepts</a> |
+        <a href="#learning">What I Learned</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section id="demo">
+            <h2>Welcome Dialog</h2>
+            <p>Click the button below to open a modal dialog.</p>
+
+            <button type="button" id="open-welcome">
+                Open Welcome Dialog
+            </button>
+
+            <dialog id="welcome-dialog" aria-labelledby="welcome-title">
+                <h2 id="welcome-title">Welcome!</h2>
+                <p>You have successfully opened your first dialog box.</p>
+                <button type="button" id="close-welcome">
+                    Close Dialog
+                </button>
+            </dialog>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Information Dialog</h2>
+            <p>Use this dialog to display additional information.</p>
+
+            <button type="button" id="open-info">
+                Show Information
+            </button>
+
+            <dialog id="info-dialog" aria-labelledby="info-title">
+                <h2 id="info-title">About This Project</h2>
+                <p>This project demonstrates the HTML dialog element.</p>
+                <p>You can close this dialog using the button or Escape.</p>
+                <button type="button" id="close-info">
+                    Close Information
+                </button>
+            </dialog>
+        </section>
+
+        <hr>
+
+        <section id="concepts">
+            <h2>Important Concepts</h2>
+            <ul>
+                <li><code>&lt;dialog&gt;</code> defines a dialog box.</li>
+                <li><code>showModal()</code> opens a modal dialog.</li>
+                <li><code>show()</code> opens a non-modal dialog.</li>
+                <li><code>close()</code> closes an open dialog.</li>
+                <li><code>open</code> indicates that a dialog is open.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="learning">
+            <h2>What I Learned</h2>
+            <ol>
+                <li>Creating dialog boxes with HTML.</li>
+                <li>Opening dialogs using JavaScript.</li>
+                <li>Closing dialogs using buttons.</li>
+                <li>Understanding modal and non-modal dialogs.</li>
+            </ol>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 HTML Learning Journey</p>
+        <p>HTML Dialog</p>
+        <p>Created by Suraj Chaudhary</p>
+    </footer>
+
+    <script>
+        // Select the welcome dialog and its buttons.
+        const welcomeDialog = document.getElementById("welcome-dialog");
+        const openWelcomeButton = document.getElementById("open-welcome");
+        const closeWelcomeButton = document.getElementById("close-welcome");
+
+        // Open the welcome dialog as a modal.
+        openWelcomeButton.addEventListener("click", function() {
+            welcomeDialog.showModal();
+        });
+
+        // Close the welcome dialog.
+        closeWelcomeButton.addEventListener("click", function() {
+            welcomeDialog.close();
+        });
+
+        // Select the information dialog and its buttons.
+        const infoDialog = document.getElementById("info-dialog");
+        const openInfoButton = document.getElementById("open-info");
+        const closeInfoButton = document.getElementById("close-info");
+
+        // Open the information dialog as a modal.
+        openInfoButton.addEventListener("click", function() {
+            infoDialog.showModal();
+        });
+
+        // Close the information dialog.
+        closeInfoButton.addEventListener("click", function() {
+            infoDialog.close();
+        });
+    </script>
+
+</body>
+</html>

@@ -38,7 +38,9 @@ This repository contains my 50-day HTML learning journey.
 - [x] Day 19 - HTML Progress and Meter
 - [x] Day 20 - HTML Figure and Figcaption
 - [x] Day 21 - HTML Picture and Source
-- [x] Day 21 - HTML Map and Area Tags
+- [x] Day 22 - HTML Map and Area Tags
+- [x] Day 23 - HTML Tamplate Elements
+- [x] Day 24 - HTML Dialog Boxes
 
 More days will be added as I continue my learning journey.
 
