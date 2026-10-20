@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist Practice</title>
+</head>
+<body>
+    
+    <form action="#">
+
+        <label for="language">Chose a programming language:</label>
+        <input type="text"
+            name="language"
+            id="language"
+            list="language-options"
+        >
+
+        <datalist id="language-options">
+            <option value="Java">
+            <option value="Python">
+            <option value="JavaScript">
+            <option value="C">
+            <option value="C++">
+        </datalist>
+
+        <br><br>
+
+        <label for="city">Enter your city:</label>
+        <input type="text" name="city" id="city" list="cities">
+
+        <datalist id="cities">
+            <option value="Lucknow"></option>
+            <option value="Basti"></option>
+            <option value="Delhi"></option>
+            <option value="Agra"></option>
+            <option value="Varanasi"></option>
+        </datalist>
+
+        <br><br>
+
+        <label for="course">Chose or type a course:</label>
+        <input type="text" id="course" name="course" list="courses">
+
+        <datalist id="courses">
+            <option value="BCA"></option>
+            <option value="BBA"></option>
+            <option value="B.Tech"></option>
+            <option value="MCA"></option>
+        </datalist>
+
+    </form>
+
+</body>
+</html>

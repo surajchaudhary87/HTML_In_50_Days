@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML datalist and input suggestions with practical examples.">
+    <title>HTML Datalist</title>
+</head>
+<body>
+
+    <header>
+        <h1>HTML Datalist Demo</h1>
+    </header>
+
+    <hr>
+
+    <nav>
+        <a href="#course">Course</a> |
+        <a href="#language">Programming Language</a> |
+        <a href="#city">City</a> |
+        <a href="#learning">What I Learned</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <section id="course">
+            <h2>1. Course Suggestions</h2>
+            <p>Type a course name to see suggestions.</p>
+
+            <label for="course-name">Course Name:</label>
+            <input
+                type="text"
+                id="course-name"
+                name="course"
+                list="course-options"
+                placeholder="Enter your course">
+
+            <datalist id="course-options">
+                <option value="BCA">
+                <option value="BBA">
+                <option value="B.Tech">
+                <option value="MCA">
+                <option value="MBA">
+            </datalist>
+        </section>
+
+        <hr>
+
+        <section id="language">
+            <h2>2. Programming Language Suggestions</h2>
+            <p>Choose a suggestion or type another language.</p>
+
+            <label for="programming-language">Language:</label>
+            <input
+                type="text"
+                id="programming-language"
+                name="programming-language"
+                list="language-options"
+                placeholder="Enter a language">
+
+            <datalist id="language-options">
+                <option value="Java">
+                <option value="Python">
+                <option value="JavaScript">
+                <option value="C">
+                <option value="C++">
+                <option value="PHP">
+            </datalist>
+        </section>
+
+        <hr>
+
+        <section id="city">
+            <h2>3. City Suggestions</h2>
+            <p>Enter a city name.</p>
+
+            <label for="city-name">City:</label>
+            <input
+                type="text"
+                id="city-name"
+                name="city"
+                list="city-options"
+                placeholder="Enter a city">
+
+            <datalist id="city-options">
+                <option value="Basti">
+                <option value="Lucknow">
+                <option value="Delhi">
+                <option value="Agra">
+                <option value="Varanasi">
+                <option value="Prayagraj">
+            </datalist>
+        </section>
+
+        <hr>
+
+        <section id="learning">
+            <h2>What I Learned</h2>
+            <ul>
+                <li>Using the datalist element.</li>
+                <li>Connecting input with datalist using list and id.</li>
+                <li>Adding suggestions with option elements.</li>
+                <li>Understanding datalist versus select.</li>
+                <li>Allowing users to type their own values.</li>
+            </ul>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 HTML Learning Journey</p>
+        <p>Created by Suraj Chaudhary</p>
+    </footer>
+
+</body>
+</html>

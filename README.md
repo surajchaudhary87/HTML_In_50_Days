@@ -41,6 +41,7 @@ This repository contains my 50-day HTML learning journey.
 - [x] Day 22 - HTML Map and Area Tags
 - [x] Day 23 - HTML Tamplate Elements
 - [x] Day 24 - HTML Dialog Boxes
+- [x] Day 25 - HTML Datalist & Input Suggestion
 
 More days will be added as I continue my learning journey.
 
