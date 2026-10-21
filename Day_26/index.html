@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn the HTML output element with a working calculator.">
+    <title>HTML Output Element</title>
+</head>
+<body>
+    <header>
+        <h1>HTML Output Element</h1>
+        <p>Learn how to display calculation results using HTML output.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Add Two Numbers</h2>
+            <p>Change either number to update the result.</p>
+
+            <form id="calculatorForm">
+                <p>
+                    <label for="numberOne">First Number:</label>
+                    <input type="number" id="numberOne" value="10">
+                </p>
+
+                <p>
+                    <label for="numberTwo">Second Number:</label>
+                    <input type="number" id="numberTwo" value="20">
+                </p>
+
+                <p>
+                    <strong>Sum:</strong>
+                    <output id="sumResult" for="numberOne numberTwo">30</output>
+                </p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Subtract Two Numbers</h2>
+
+            <form id="subtractForm">
+                <p>
+                    <label for="numberThree">First Number:</label>
+                    <input type="number" id="numberThree" value="50">
+                </p>
+
+                <p>
+                    <label for="numberFour">Second Number:</label>
+                    <input type="number" id="numberFour" value="15">
+                </p>
+
+                <p>
+                    <strong>Difference:</strong>
+                    <output id="differenceResult" for="numberThree numberFour">35</output>
+                </p>
+            </form>
+        </section>
+
+        <section>
+            <h2>What I Learned</h2>
+            <ul>
+                <li>The output element displays a result.</li>
+                <li>The for attribute connects the output to related inputs.</li>
+                <li>JavaScript can update the output value.</li>
+                <li>The output element does not calculate by itself.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>HTML</p>
+        <p>Created by Suraj Chaudhary</p>
+    </footer>
+
+    <script>
+        // Get elements for addition
+        const numberOne = document.getElementById("numberOne");
+        const numberTwo = document.getElementById("numberTwo");
+        const sumResult = document.getElementById("sumResult");
+
+        // Calculate the sum
+        function calculateSum() {
+            sumResult.value =
+                Number(numberOne.value) + Number(numberTwo.value);
+        }
+
+        // Update sum when either input changes
+        numberOne.addEventListener("input", calculateSum);
+        numberTwo.addEventListener("input", calculateSum);
+
+        // Get elements for subtraction
+        const numberThree = document.getElementById("numberThree");
+        const numberFour = document.getElementById("numberFour");
+        const differenceResult = document.getElementById("differenceResult");
+
+        // Calculate the difference
+        function calculateDifference() {
+            differenceResult.value =
+                Number(numberThree.value) - Number(numberFour.value);
+        }
+
+        // Update difference when either input changes
+        numberThree.addEventListener("input", calculateDifference);
+        numberFour.addEventListener("input", calculateDifference);
+
+        // Display correct initial results
+        calculateSum();
+        calculateDifference();
+    </script>
+</body>
+</html>
