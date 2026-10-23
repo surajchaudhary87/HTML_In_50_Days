@@ -44,6 +44,7 @@ This repository contains my 50-day HTML learning journey.
 - [x] Day 25 - HTML Datalist & Input Suggestion
 - [x] Day 26 - HTML Output Tag
 - [x] Day 27 - HTML Data Tag
+- [x] Day 27 - HTML Time Element
 
 More days will be added as I continue my learning journey.
 
