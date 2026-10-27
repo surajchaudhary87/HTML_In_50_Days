@@ -48,6 +48,7 @@ This repository contains my 50-day HTML learning journey.
 - [x] Day 29 - HTML Abbe Element
 - [x] Day 30 - HTML address Element
 - [x] Day 31 - HTML Cite Element
+- [x] Day 32 - HTML Blockquote & q Element
 
 More days will be added as I continue my learning journey.
 
