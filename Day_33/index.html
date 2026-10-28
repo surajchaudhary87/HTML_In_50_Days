@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML bdo and bdi elements with examples.">
+    <title>HTML Text Direction</title>
+</head>
+<body>
+
+    <header>
+        <h1>HTML Text Direction</h1>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>1. Normal Text</h2>
+            <p>Hello World</p>
+        </section>
+
+        <section>
+            <h2>2. BDO Element</h2>
+
+            <p>Left-to-right text:</p>
+            <bdo dir="ltr">Hello World</bdo>
+
+            <p>Right-to-left text:</p>
+            <bdo dir="rtl">Hello World</bdo>
+        </section>
+
+        <section>
+            <h2>3. BDI Element</h2>
+
+            <p>User: <bdi>Suraj</bdi></p>
+            <p>User: <bdi>علي</bdi></p>
+            <p>User: <bdi>דוד</bdi></p>
+        </section>
+
+        <section>
+            <h2>4. Student List</h2>
+
+            <ul>
+                <li>Student: <bdi>Suraj</bdi></li>
+                <li>Student: <bdi>علي</bdi></li>
+                <li>Student: <bdi>דוד</bdi></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Important Difference</h2>
+
+            <p>
+                The bdo element forces a text direction using
+                the dir attribute.
+            </p>
+
+            <p>
+                The bdi element isolates text whose direction
+                may differ from the surrounding content.
+            </p>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Day 33 completed - HTML Learning Journey</p>
+        <p>Created by Suraj Chaudhary</p>
+    </footer>
+
+</body>
+</html>
