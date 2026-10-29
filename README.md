@@ -50,6 +50,7 @@ This repository contains my 50-day HTML learning journey.
 - [x] Day 31 - HTML Cite Element
 - [x] Day 32 - HTML Blockquote & q Element
 - [x] Day 33 - HTML Bdo & Bdi Tags
+- [x] Day 34 - HTML Ruby, Rt, Rp Tags
 
 More days will be added as I continue my learning journey.
 

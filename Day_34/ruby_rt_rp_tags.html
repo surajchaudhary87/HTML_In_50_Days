@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruby, Rt & Rp Tags</title>
+</head>
+<body>
+    
+    <!-- Ruby =  <ruby> element ke andar main text aur uski pronunciation ya reading di ja sakti hai -->
+
+    <ruby>  
+        漢 <rt>かん</rt>
+    </ruby>
+
+    <!-- Rt = <rt> ka use ruby annotation mein reading text likhne ke liye hota hai -->
+    <p>
+        <ruby>
+            東京 <rt>とうきょう</rt>
+        </ruby>
+    </p>
+
+    <!-- Rp =  <rp> ka full form Ruby Parenthesis hai. Ye un browsers ke liye fallback text provide karta hai jo ruby annotations ko display nahi karte. Aise browsers mein parentheses dikhaye ja sakte hain -->
+    <ruby>
+        漢
+        <rp>(</rp>
+        <rt>かん</rt>
+        <rp>)</rp>
+    </ruby>
+
+</body>
+</html>
