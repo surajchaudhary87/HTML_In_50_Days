@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn HTML ruby, rt and rp elements with examples.">
+    <title>HTML Ruby Annotations</title>
+</head>
+<body>
+
+    <header>
+        <h1>HTML Ruby Annotations</h1>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>1. The Ruby Element</h2>
+            <p>
+                Ruby annotations can show the reading of characters.
+            </p>
+
+            <p>
+                <ruby>
+                    漢
+                    <rt>かん</rt>
+                </ruby>
+            </p>
+        </section>
+
+        <section>
+            <h2>2. The RT Element</h2>
+            <p>Example of a Japanese place name:</p>
+
+            <p>
+                <ruby>
+                    東京
+                    <rt>とうきょう</rt>
+                </ruby>
+            </p>
+        </section>
+
+        <section>
+            <h2>3. The RP Element</h2>
+            <p>
+                The rp element provides fallback parentheses
+                when ruby annotations are not supported.
+            </p>
+
+            <p>
+                <ruby>
+                    漢
+                    <rp>(</rp>
+                    <rt>かん</rt>
+                    <rp>)</rp>
+                </ruby>
+            </p>
+        </section>
+
+        <section>
+            <h2>4. More Examples</h2>
+
+            <p>
+                <ruby>
+                    日本
+                    <rp>(</rp>
+                    <rt>にほん</rt>
+                    <rp>)</rp>
+                </ruby>
+            </p>
+
+            <p>
+                <ruby>
+                    学生
+                    <rp>(</rp>
+                    <rt>がくせい</rt>
+                    <rp>)</rp>
+                </ruby>
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Summary</h2>
+            <ul>
+                <li>ruby groups the main text and its annotation.</li>
+                <li>rt provides the reading or pronunciation.</li>
+                <li>rp provides fallback text for unsupported browsers.</li>
+            </ul>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Day 34 completed - HTML Learning Journey</p>
+        <p>Created by Suraj Chaudhary</p>
+    </footer>
+
+</body>
+</html>
