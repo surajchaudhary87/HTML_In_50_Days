@@ -54,6 +54,7 @@ This repository contains my 50-day HTML learning journey.
 - [x] Day 35 - HTML wbr Element
 - [x] Day 36 - HTML noscript Tag
 - [x] Day 37 - HTML data- Attributes
+- [x] Day 38 - HTML Custom Elements
 
 More days will be added as I continue my learning journey.
 

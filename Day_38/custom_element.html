@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Elements</title>
+</head>
+<body>
+    
+
+    <header>
+        <h1>Custom Elements in HTML</h1>
+        <p>Learning about custom elements and their usage</p>
+    </header>
+
+    <hr>
+    <main>
+
+        <user-card name="Rahul" course="BCA" year="Second"></user-card>
+        <product-card name="Laptop" price="50000" brand="Dell"></product-card>
+        <student-card name="Priya" course="BBA" year="First"></student-card>
+
+        <!-- Ye custom element names hain. Inhe hum apni website ke specific components ke liye use kar sakte hain. -->
+
+        <!-- 
+        2. Custom Elements ke naming rules
+            1. Custom element name mein hyphen (-) hona zaroori hai.
+            2. Naam lowercase rakhna best practice hai.
+            3. Naam built-in HTML tags ke saath conflict nahi karna chahiye.
+        -->
+
+        <student-card>
+            <h2>Suraj Chaudhary</h2>
+            <p>Course: BCA</p>
+            <p>Year: Second Year</p>
+        </student-card>
+
+        <employee-card>
+            <h2>John Doe</h2>
+            <p>Position: Software Engineer</p>
+            <p>Department: IT</p>
+        </employee-card>
+
+        <book-card>
+            <h2>The Great Gatsby</h2>
+            <p>Author: F. Scott Fitzgerald</p>
+            <p>Genre: Fiction</p>
+        </book-card>
+
+    </main>
+
+    <footer>
+        <p>© 2024 Custom Elements Learning. All rights reserved.</p>
+        <p>Created by Suraj Chaudhary</p>
+    </footer>
+
+
+</body>
+</html>
