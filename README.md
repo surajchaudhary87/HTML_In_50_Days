@@ -55,6 +55,7 @@ This repository contains my 50-day HTML learning journey.
 - [x] Day 36 - HTML noscript Tag
 - [x] Day 37 - HTML data- Attributes
 - [x] Day 38 - HTML Custom Elements
+- [x] Day 39 - HTML slot Element
 
 More days will be added as I continue my learning journey.
 

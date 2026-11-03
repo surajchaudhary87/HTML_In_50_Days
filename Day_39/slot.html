@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Element Example</title>
+</head>
+<body>
+
+    <header>
+        <h1>Slot Element Example</h1>
+        <p>Understanding the use of the slot element in Web Components.</p> 
+    </header>
+    <hr>
+
+    <!-- slot = <slot> ek placeholder hota hai. Web Component ke andar ye batata hai ki component ke bahar se diya gaya content kahan display hoga -->
+    
+    <slot></slot>
+    <slot name="student-name"></slot>
+
+    <student-card>
+        <h2 slot="student-name">Suraj Chaudhary</h2>
+        <p slot="course">Course: BCA</p>
+        <p>This is a student profile.</p>
+    </student-card>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Example</title>
+</head>
+<body>
+
+    <header>
+        <h1>Student Profiles</h1>
+    </header>
+   
+    <hr>
+    <student-card>
+        <h3 slot="student-name">Suraj Chaudhary</h3>
+        <p slot="course">BCA</p>
+        <p>This is my student profile.</p>
+    </student-card>
+
+    <student-card>
+        <h3 slot="student-name">Rahul Kumar</h3>
+        <p slot="course">BBA</p>
+        <p>This is Rahul's student profile.</p>
+    </student-card>
+
+    <script>
+        class StudentCard extends HTMLElement {
+            constructor() {
+                super();
+
+                const shadow = this.attachShadow({ mode: "open" });
+
+                shadow.innerHTML = `
+                    <article>
+                        <h2><slot name="student-name"></slot></h2>
+                        <p>Course: <slot name="course"></slot></p>
+                        <slot></slot>
+                    </article>
+                `;
+            }
+        }
+
+        customElements.define("student-card", StudentCard);
+    </script>
+
+</body>
+</html>
