@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Contenteditable Attributes</title>
+</head>
+<body>
+
+    <!-- contenteditable kya hai?
+    contenteditable ek global HTML attribute hai. Isse kisi HTML element ke content ko user browser mein edit kar sakta hai. -->
+
+    
+    <header>
+        <h1>HTML Contenteditable Attributes</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Editable Content</h2>
+            <p contenteditable="true">This paragraph is editable. You can click here and change the text.</p>
+            <p contenteditable="false">This paragraph is not editable. You cannot change this text.</p>
+        </section>
+        <section>
+            <h2>Editable Div</h2>
+            <div contenteditable="true" style="border: 1px solid #ccc; padding: 10px;">
+                This div is editable. You can click here and change the text.
+            </div>
+        </section>
+        <section>
+            <h2 contenteditable="true">
+                Edit this heading
+            </h2>
+
+            <p contenteditable="false">
+                You cannot edit this paragraph.
+            </p>
+
+            <div contenteditable="plaintext-only">
+                Edit only plain text here.
+            </div>
+        </section>
+    </main>
+
+
+
+
+</body>
+</html>

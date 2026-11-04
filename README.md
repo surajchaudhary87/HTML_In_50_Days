@@ -56,6 +56,7 @@ This repository contains my 50-day HTML learning journey.
 - [x] Day 37 - HTML data- Attributes
 - [x] Day 38 - HTML Custom Elements
 - [x] Day 39 - HTML slot Element
+- [x] Day 39 - HTML contenteditable Attribute
 
 More days will be added as I continue my learning journey.
 
