@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML drag and drop task board">
+    <title>Drag and Drop</title>
+</head>
+<body>
+
+    <header>
+        <h1>My Task Board</h1>
+        <p>Drag tasks from one section to another.</p>
+    </header>
+
+    <hr>
+    <main>
+
+        <section>
+            <h2>Pending Tasks</h2>
+
+            <div id="pending">
+                <p id="task1" draggable="true">
+                    Learn HTML
+                </p>
+
+                <p id="task2" draggable="true">
+                    Practice Java
+                </p>
+
+                <p id="task3" draggable="true">
+                    Complete Homework
+                </p>
+            </div>
+        </section>
+
+
+        <section>
+            <h2>Completed Tasks</h2>
+
+            <div id="completed">
+                <p>Drop completed tasks here.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created for Day 41 HTML Learning Challenge.</p>
+        <p>Created by Suraj Chaudhary</p>
+    </footer>
+
+    <script>
+        const tasks = document.querySelectorAll(
+            "[draggable='true']"
+        );
+
+        const dropAreas = document.querySelectorAll(
+            "#pending, #completed"
+        );
+
+        tasks.forEach(function(task) {
+
+            task.addEventListener("dragstart", function(event) {
+                event.dataTransfer.setData(
+                    "text/plain",
+                    task.id
+                );
+            });
+
+        });
+
+        dropAreas.forEach(function(area) {
+
+            area.addEventListener("dragover", function(event) {
+                event.preventDefault();
+            });
+
+            area.addEventListener("drop", function(event) {
+                event.preventDefault();
+
+                const taskId = event.dataTransfer.getData(
+                    "text/plain"
+                );
+
+                const draggedTask = document.getElementById(taskId);
+
+                if (draggedTask) {
+                    area.appendChild(draggedTask);
+                }
+            });
+
+        });
+    </script>
+
+</body>
+</html>
