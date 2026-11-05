@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drag and Drop Example</title>
+</head>
+<body>
+
+    <h1>Drag and Drop</h1>
+
+    <p id="task" draggable="true">
+        Learn HTML
+    </p>
+
+    <div id="drop-area">
+        Drop Here
+    </div>
+
+    <script>
+        const task = document.getElementById("task");
+        const dropArea = document.getElementById("drop-area");
+
+        task.addEventListener("dragstart", function(event) {
+            event.dataTransfer.setData("text/plain", task.id);
+        });
+
+        dropArea.addEventListener("dragover", function(event) {
+            event.preventDefault();
+        });
+
+        dropArea.addEventListener("drop", function(event) {
+            event.preventDefault();
+
+            const id = event.dataTransfer.getData("text/plain");
+            const draggedElement = document.getElementById(id);
+
+            dropArea.appendChild(draggedElement);
+        });
+    </script>
+
+</body>
+</html>
