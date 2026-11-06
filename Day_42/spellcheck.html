@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Spellcheck Attribute</title>
+</head>
+<body>
+    
+    <header>
+        <h1>HTML Spellcheck Attribute</h1>
+        <p>The spellcheck attribute is used to specify whether the element should have its spelling and grammar checked or not.</p> 
+    </header>
+
+    <main>
+
+        <section>
+            <p contenteditable="true" spellcheck="true">
+                This is a contenteditable element with spellcheck enabled. You can type here and the browser will check for spelling errors.</p>
+            </p>
+        </section>
+
+        <section>
+            <p contenteditable="true" spellcheck="true">
+                Check my spelling.
+            </p>
+
+            <p contenteditable="true" spellcheck="false">
+                Do not check my spelling.
+            </p>
+        </section>
+
+        <section>
+            <form>
+                <label for="username">Your Name:</label>
+                <input type="text" id="username" spellcheck="true">
+
+                <br><br>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" spellcheck="true"></textarea>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

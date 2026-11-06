@@ -58,6 +58,7 @@ This repository contains my 50-day HTML learning journey.
 - [x] Day 39 - HTML slot Element
 - [x] Day 40 - HTML contenteditable Attribute
 - [x] Day 41 - HTML draggable Attribute
+- [x] Day 42 - HTML spellcheck Attribute
 
 More days will be added as I continue my learning journey.
 
