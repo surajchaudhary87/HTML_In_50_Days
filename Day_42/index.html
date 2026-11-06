@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML spellcheck attribute practice">
+    <title>Spellcheck Attribute</title>
+</head>
+<body>
+
+    <header>
+        <h1>My Spelling Practice Page</h1>
+        <p>HTML Learning Challenge </p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Editable Text</h2>
+
+            <p contenteditable="true" spellcheck="true">
+                I am learning HTML and improving my English.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Spelling Check Enabled</h2>
+
+            <label for="message">Write your message:</label>
+            <br><br>
+
+            <textarea
+                id="message"
+                rows="5"
+                cols="40"
+                spellcheck="true"
+            >I am learning programing.</textarea>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Spelling Check Disabled</h2>
+
+            <label for="notes">Write your notes:</label>
+            <br><br>
+
+            <textarea
+                id="notes"
+                rows="5"
+                cols="40"
+                spellcheck="false"
+            >I am learning programing.</textarea>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>My Learning Goals</h2>
+
+            <ul contenteditable="true" spellcheck="true">
+                <li>Learn HTML</li>
+                <li>Practice Java</li>
+                <li>Improve English</li>
+                <li>Become a Full Stack Developer</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created for my 50 Days HTML Learning Challenge.</p>
+        <p>Created by Suraj Chaudhary</p>
+    </footer>
+
+</body>
+</html>
