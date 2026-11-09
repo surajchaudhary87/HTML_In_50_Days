@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Registration Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Student Registration</h1>
+        <p>Practice HTML inert attribute.</p>
+    </header>
+
+    <main>
+
+        <button type="button" onclick="toggleForm()">
+            Activate / Deactivate Form
+        </button>
+
+        <p id="status">Form is currently inactive.</p>
+
+        <form id="registrationForm" inert>
+
+            <fieldset>
+                <legend>Student Details</legend>
+
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+                <br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+                <br><br>
+
+                <label for="course">Course:</label><br>
+                <select id="course" name="course" required>
+                    <option value="">Select course</option>
+                    <option value="bca">BCA</option>
+                    <option value="bba">BBA</option>
+                    <option value="bcom">B.Com</option>
+                </select>
+                <br><br>
+
+                <button type="submit">Register</button>
+            </fieldset>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Registration</p>
+        <p>Created by Suraj Chaudhary</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById("registrationForm");
+        const status = document.getElementById("status");
+
+        function toggleForm() {
+
+            form.inert = !form.inert;
+
+            if (form.inert) {
+                status.textContent = "Form is currently inactive.";
+            } else {
+                status.textContent = "Form is now active.";
+            }
+        }
+    </script>
+
+</body>
+</html>
