@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Toggle Inert</title>
+</head>
+<body>
+
+    <h1>Inert Attribute Example</h1>
+
+    <hr>
+
+    <section id="mySection" inert>
+        <h2>My Section</h2>
+
+        <input type="text" placeholder="Enter your name">
+
+        <button>Submit</button>
+    </section>
+
+    <br>
+
+    <button onclick="toggleSection()">
+        Activate / Deactivate
+    </button>
+
+    <script>
+        function toggleSection() {
+            const section = document.getElementById("mySection");
+
+            section.inert = !section.inert;
+        }
+    </script>
+
+</body>
+</html>
