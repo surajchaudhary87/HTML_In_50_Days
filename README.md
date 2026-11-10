@@ -62,6 +62,7 @@ This repository contains my 50-day HTML learning journey.
 - [x] Day 43 - HTML autofocus Attribute
 - [x] Day 44 - HTML hidden Attribute
 - [x] Day 45 - HTML inert Attribute
+- [x] Day 46 - HTML accesskey Attribute
 
 More days will be added as I continue my learning journey.
 
