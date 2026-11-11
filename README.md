@@ -63,6 +63,7 @@ This repository contains my 50-day HTML learning journey.
 - [x] Day 44 - HTML hidden Attribute
 - [x] Day 45 - HTML inert Attribute
 - [x] Day 46 - HTML accesskey Attribute
+- [x] Day 47 - HTML translate Attribute
 
 More days will be added as I continue my learning journey.
 
