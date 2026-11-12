@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Navigation Page</title>
+</head>
+<body>
+
+    <header>
+        <h1 tabindex="0">My Learning Website</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <h2 tabindex="0">Welcome</h2>
+
+            <p tabindex="0">
+                Welcome to my learning website.
+                Learn programming step by step.
+            </p>
+        </section>
+
+        <section id="courses">
+            <h2 tabindex="0">My Courses</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ul>
+
+            <button type="button" onclick="focusContact()">
+                Go to Contact Section
+            </button>
+        </section>
+
+        <section id="contact" tabindex="-1">
+            <h2>Contact Information</h2>
+
+            <p>Email: example@gmail.com</p>
+
+            <button type="button" onclick="alert('Thank you!')">
+                Say Hello
+            </button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Learning Website</p>
+        <p>Created by Suraj Chaudhary</p>
+    </footer>
+
+    <script>
+        function focusContact() {
+            document.getElementById("contact").focus();
+        }
+    </script>
+
+</body>
+</html>
