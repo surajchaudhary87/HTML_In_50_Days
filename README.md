@@ -65,6 +65,7 @@ This repository contains my 50-day HTML learning journey.
 - [x] Day 46 - HTML accesskey Attribute
 - [x] Day 47 - HTML translate Attribute
 - [x] Day 48 - HTML tabindex Attribute
+- [x] Day 49 - HTML dir Attribute
 
 More days will be added as I continue my learning journey.
 

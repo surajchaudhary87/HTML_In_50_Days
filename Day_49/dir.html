@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Dir Attribute</title>
+</head>
+<body>
+    <header>
+        <h1 dir="ltr">My Learning Website</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="#home" dir="ltr">Home</a>
+            <a href="#courses" dir="ltr">Courses</a>
+            <a href="#contact" dir="ltr">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home" dir="ltr">
+            <h2>Welcome</h2>
+
+            <p>
+                Welcome to my learning website.
+                Learn programming step by step.
+            </p>
+        </section>
+
+        <section id="courses" dir="ltr">
+            <h2>My Courses</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ul>
+
+            <button type="button" onclick="focusContact()">
+                Go to Contact Section
+            </button>
+        </section>
+
+        <section id="contact" dir="ltr">
+            <h2>Contact Information</h2>
+            <p>Email: suraj8795@gmail.com</p>
+            <button type="button" onclick="alert('Thank you!')">
+                Say Hello
+            </button>
+        </section>
+
+    </main>
+
+    <footer dir="ltr">
+        <p>&copy; 2026 My Learning Website</p>
+        <p>Created by Suraj Chaudhary</p>
+    </footer>
+</body>
+</html>
