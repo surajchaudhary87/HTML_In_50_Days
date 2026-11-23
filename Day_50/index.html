@@ -181,7 +181,7 @@
 
         <hr>
 
-         <!-- Learning Timetable -->
+        <!-- Learning Timetable -->
         <section id="timetable">
 
             <h2>My Daily Learning Schedule</h2>
@@ -225,6 +225,82 @@
                 </tbody>
 
             </table>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+
+            <h2>Contact Me</h2>
+
+            <p>
+                If you want to connect with me,
+                you can use the form below.
+            </p>
+
+            <form action="#" method="post">
+
+                <fieldset>
+
+                    <legend>Contact Form</legend>
+
+                    <label for="name">Your Name:</label>
+                    <br>
+
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Enter your name"
+                           required>
+
+                    <br><br>
+
+                    <label for="email">Your Email:</label>
+                    <br>
+
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Enter your email"
+                           required>
+
+                    <br><br>
+
+                    <label for="subject">Subject:</label>
+                    <br>
+
+                    <select id="subject" name="subject" required>
+
+                        <option value="">Select Subject</option>
+
+                        <option value="project">Project Discussion</option>
+
+                        <option value="career">Career Discussion</option>
+
+                        <option value="other">Other</option>
+
+                    </select>
+
+                    <br><br>
+
+                    <label for="message">Your Message:</label>
+                    <br>
+
+                    <textarea id="message"
+                              name="message"
+                              rows="5"
+                              cols="30"
+                              placeholder="Write your message"
+                              required></textarea>
+
+                    <br><br>
+
+                    <button type="submit">Send Message</button>
+
+                    <button type="reset">Reset Form</button>
+
+                </fieldset>
+
+            </form>
 
         </section>
         
